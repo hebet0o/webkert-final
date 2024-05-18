@@ -1,0 +1,33 @@
+<mat-nav-list>
+    <a mat-list-item class="regLink" id="home" routerLink="" routerLinkActive="active">
+        <div>
+            <mat-icon>home</mat-icon>
+            <span>Kezdőlap</span>  
+        </div>
+    </a>
+    <a mat-list-item class="regLink" id="prof" routerLink="/profile" routerLinkActive="active">
+        <div>    
+            <mat-icon>person</mat-icon>
+            <span>Profil</span>  
+        </div>    
+    </a>
+    <a mat-list-item class="regLink" id="reg" routerLink="/register" routerLinkActive="active">
+        <div>    
+            <mat-icon>app_registration</mat-icon>
+            <span>Regisztráció</span>  
+        </div>    
+    </a>
+    <a mat-list-item class="regLink" *ngIf="!(loggedInUser)" id="login" routerLink="/login" routerLinkActive="active">
+        <div>
+            <mat-icon>login</mat-icon>
+            <span>Bejelentkezés</span>  
+        </div>
+    </a>
+    <a mat-list-item class="regLink" *ngIf="(loggedInUser)" id="logout" routerLink="/login" routerLinkActive="active" (click)="logout()">
+        <div>
+            <mat-icon>logout</mat-icon>
+            <span>Kijelentkezés</span>  
+        </div>
+    </a>
+    
+</mat-nav-list>

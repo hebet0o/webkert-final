@@ -1,0 +1,77 @@
+.main-content-form {
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../../../assets/mainbg.jpg");
+    width: 97vw;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .main-box-outer{
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    height: 30vh;
+    align-items: center;
+    width: 50vw;
+  }
+  
+  .main-box-inside{
+    color: white;
+    opacity: 100%;
+    align-items: center;
+  }
+  
+  .search-form {
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .main-box-inside button {
+    margin-top: 20px;
+    background-color:#1ABC9C;
+  }
+  
+  span{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  #caption-below{
+    margin-top: 30px;
+  }
+
+  .inputFields{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /*Saját repjegyeim*/
+
+  .myTickets{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .col{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,28 @@
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <app-header></app-header>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <a routerLink="" routerLinkActive="active" class="logo" >repjegyek</a>
+            <div fxFlex FlexLayout fxHide.gt-md fxLayoutAlign = "flex-end">    
+                <button mat-icon-button (click)="onToggleSidenav(sidenav)">
+                        <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+        <div fxFlex fxLayout fxLayoutGap = "10px" fxLayoutAlign = "center" fxHide.md fxHide.sm fxHide.xs>
+            <a id="home" routerLink="" routerLinkActive="active">Kezdőlap</a><p> | </p>
+            <a id="reg" routerLink="/register" routerLinkActive="active">Regisztráció</a><p> | </p>
+            <a id="prof" routerLink="/profile" routerLinkActive="active">Profil</a><p> | </p>
+            <a *ngIf="!(loggedInUser)" id="login" routerLink="/login" routerLinkActive="active">Bejelentkezés</a>
+            <a *ngIf="(loggedInUser)" id="logout" routerLink="/login" routerLinkActive="active" (click)="logout()">Kijelentkezés</a> 
+        </div>
+        </mat-toolbar>
+        <main> </main>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<app-footer></app-footer>

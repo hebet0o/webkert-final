@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-color: rgb(25,39,67);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .copy {
+    font-size: 14px;
+  }
+  
+  

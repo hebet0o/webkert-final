@@ -1,0 +1,27 @@
+<div class="main-content-form">
+    <div class="main-box-outer">
+      <div class="main-box-inside">
+        <span>Profil</span>
+        <p id="caption-below">Profil adatai</p>
+       
+        <div class="search-form">
+          <div  class="inputFields">
+            <span>Felhasználónév:  <span class="title">{{user?.username}}</span></span>
+          </div>
+          <div class="inputFields">
+          <span>Email:  <span class="title">{{user?.email}}</span></span>
+          </div>
+        </div>
+        <button mat-raised-button color="primary" (click)="delete()">Profil törlése</button>
+      </div>
+    </div>
+  </div>
+
+  <div  class="myTickets">
+    <span >Saját repjegyeim</span>
+    <div class="tickets">
+    <div class="col">
+      <app-flight-card *ngFor="let item of bookedFlights" [flight]="item"></app-flight-card> 
+    </div>
+  </div>
+  </div>

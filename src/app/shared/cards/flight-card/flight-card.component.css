@@ -1,0 +1,45 @@
+.container{
+ font-family: "Poppins", sans-serif;
+ font-size: large;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 100%;
+}
+
+.cards {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 500px;
+    display: flex;
+  }
+  
+  .card {
+    padding: 10px;
+    width: 150%;
+    background-color: white;
+    border: 2px solid #1abc9c;
+    box-shadow: 0 2px 0px -1px #1abc9c, 0 0px 1px 0 #1abc9c, 0 0px 3px 0 #1abc9c;
+    max-width: 300px;
+    max-height: 500px;
+    margin: 30px;
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  mat-card-actions button {
+    border-color: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #1abc9c;
+    border-radius: 10%;
+  }
+
+  .title{
+    color: #138770;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }

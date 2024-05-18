@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "planeticket-8ba5c": {
+      "hosting": {
+        "planeticket": [
+          "planeticket-8ba5c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "planeticket-8ba5c"
+  }
+}

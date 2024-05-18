@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="cards">
+    <mat-card class="card">
+    <span><span class="title">Légitársaság:</span> {{flight?.airline}}</span>
+    <span><span class="title">Cél:</span>{{flight?.endPlace}}</span>
+    <span><span class="title">Ár:</span> {{flight?.price | pricePipe}}</span>
+    <span><span class="title">Szabad helyek:</span> {{flight?.seatsRemaining}}</span>
+    <span><span class="title">Indulás dátum:</span> {{flight?.startDate?.toDate()?.toLocaleString('hu-HU')}}</span>
+    <span><span class="title">Indulási hely:</span> {{flight?.startPlace}}</span>
+    <mat-card-actions style="justify-content: center;">
+        <ng-container *ngIf="!bookResponse && cutUrl != 'profile';  else elseTemplate">
+            <button class="bookButton" mat-button (click)="book()">Lefoglalom!</button>
+        </ng-container>
+        <ng-template #elseTemplate>
+            <span>{{bookResponse}}</span>
+        </ng-template>
+        
+        
+    </mat-card-actions>
+    </mat-card>
+    </div>
+</div>

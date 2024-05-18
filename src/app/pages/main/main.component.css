@@ -1,0 +1,83 @@
+.main-content-form {
+  padding: 20px;
+  height: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../../assets/mainbg.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  margin-left: 1%;
+}
+
+.main-box-outer {
+  width: 90vw;
+  padding-top: 30px;
+  border-radius: 20px;
+  height: 30vh;
+  align-items: center;
+}
+
+.main-box-inside {
+  background-color: rgb(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 30px;
+  height: 15rem;
+  color: white;
+  opacity: 100%;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.search-form input {
+  border-radius: 50px;
+}
+
+.search-field {
+  margin-right: 1vw;
+}
+
+.search-form button {
+  border-radius: 50px;
+  color: white;
+  margin-top: 10px;
+  background-color: #1abc9c;
+}
+
+span {
+  font-size: 24px;
+}
+
+#caption-below {
+  margin-top: 30px;
+}
+
+mat-form-field {
+  margin: 5px;
+}
+
+.flights-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

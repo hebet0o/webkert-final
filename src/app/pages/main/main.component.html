@@ -1,0 +1,52 @@
+<div class="main-content-form">
+  <div class="main-box-outer">
+    <div class="main-box-inside">
+      <span>Üdvözöljük a Repülőjegy foglalásnál!</span>
+      <p id="caption-below">Foglalja le repülőjegyeit problémamentesen nálunk!</p>
+      <div class="radio">
+        <mat-radio-group (change)="toggleDatePickerVisibility($event.value)">
+          <mat-radio-button color="primary" id="radio" value="oneWay" name="oneway-radio">Egyirányú</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <form [formGroup]="formGroup" (ngSubmit)="searchFlights()" class="search-form">    
+        <mat-form-field class="search-field">
+          <input matInput type="text" formControlName="startPlace" placeholder="Indulás">
+          <mat-hint>Város</mat-hint>
+        </mat-form-field>
+    
+        <mat-form-field class="search-field">
+          <input matInput type="text" formControlName="endPlace" placeholder="Cél">
+          <mat-hint>Város</mat-hint>
+        </mat-form-field>
+    
+        <div [style.display]="showOneWayPicker ? 'none' : 'block'">
+          <mat-form-field>
+            <mat-label>Indulás - Visszaút</mat-label>
+            <mat-date-range-input [rangePicker]="pickerRetour">
+              <input matStartDate placeholder="Indulás dátuma" formControlName="startDate">
+              <input matEndDate placeholder="Visszaút dátuma" formControlName="backDate">
+            </mat-date-range-input>
+            <mat-hint>HH/NN/ÉÉÉÉ – HH/NN/ÉÉÉÉ</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="pickerRetour"></mat-datepicker-toggle>
+            <mat-date-range-picker #pickerRetour></mat-date-range-picker>
+          </mat-form-field>
+        </div>
+    
+        <div  class="inputFields" [style.display]="!showOneWayPicker ? 'none' : 'block'">
+          <mat-form-field>
+            <mat-label>Indulás dátuma</mat-label>
+            <input matInput [matDatepicker]="pickerOneWay" formControlName="startDate">
+            <mat-hint>HH/NN/ÉÉÉÉ</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="pickerOneWay"></mat-datepicker-toggle>
+            <mat-datepicker #pickerOneWay></mat-datepicker>
+          </mat-form-field>
+        </div>
+    
+        <button mat-raised-button color="primary" type="submit" (submit)="searchFlights()">Járatok keresése</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div *ngIf="validFlights" class="flights-container">
+  <app-flight-card [flight]="flight" *ngFor="let flight of validFlights"></app-flight-card>
+</div>

@@ -1,0 +1,51 @@
+.form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+div {
+    margin-bottom: 20px;
+  }
+  
+label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease 0.5s;
+  }
+
+  span{
+    margin-bottom: 1em;
+  }
+  
+  button:hover {
+    background-color: #117a65;
+    color: white;
+  }
+  
+  .login{
+    text-align: center;
+    height: 100vh;
+    background-image: url("../../../assets/mainbg.jpg");
+    background-size: 140%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  

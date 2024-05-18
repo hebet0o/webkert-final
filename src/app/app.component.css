@@ -1,0 +1,33 @@
+.mat-toolbar {
+    background-color: rgb(25,39,67);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-left: 25%;
+    text-decoration: none;
+  }
+  
+  #login, #logout, #reg, #home, #prof{
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  a:visited{
+    text-decoration: none;
+    color: white;
+  }
+
+  p{
+    color: #1ABC9C;
+  }
+  mat-sidenav{
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+}
+

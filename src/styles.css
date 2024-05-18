@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Import Angular Material styles */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.mat-button {
+    background-color: #1ABC9C;
+    color: white; 
+  }
+  
+  .mat-input-element {
+    color: black; 
+  }
+  
+  .mat-form-field.mat-date-range-input-container {
+    background-color: white; 
+    color: black;
+  }
+
+  .mat-radio-button{
+    color: white;
+  }
+  
+.mdc-label{
+    color: white;
+}
+
+#radio-input{
+    color: white;
+}
+
+.mdc-button__label{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+
+html, body {
+    height: 98%; 
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
